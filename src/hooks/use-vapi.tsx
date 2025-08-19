@@ -12,7 +12,7 @@ interface UseVapiOptions {
       temperature?: number;
     };
     voice?: {
-      provider: 'elevenlabs';
+      provider: '11labs';
       voiceId: string;
       model: string;
       stability?: number;
@@ -77,7 +77,7 @@ export const useVapi = (options: UseVapiOptions = {}) => {
           temperature: 0.7,
         },
         voice: {
-          provider: 'elevenlabs',
+          provider: '11labs',
           voiceId: '9BWtsMINqrJLrRacOk9x', // Aria voice
           model: 'eleven_multilingual_v2',
           stability: 0.5,
