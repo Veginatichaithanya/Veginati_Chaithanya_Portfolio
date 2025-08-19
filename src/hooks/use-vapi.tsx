@@ -14,7 +14,11 @@ interface UseVapiOptions {
     voice?: {
       provider: 'elevenlabs';
       voiceId: string;
-      model?: string;
+      model: string;
+      stability?: number;
+      similarityBoost?: number;
+      style?: number;
+      useSpeakerBoost?: boolean;
     };
   };
 }
@@ -76,6 +80,10 @@ export const useVapi = (options: UseVapiOptions = {}) => {
           provider: 'elevenlabs',
           voiceId: '9BWtsMINqrJLrRacOk9x', // Aria voice
           model: 'eleven_multilingual_v2',
+          stability: 0.5,
+          similarityBoost: 0.75,
+          style: 0.0,
+          useSpeakerBoost: true,
         },
       });
     } catch (err) {
