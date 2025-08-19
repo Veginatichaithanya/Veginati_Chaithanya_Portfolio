@@ -1,7 +1,7 @@
-
 import { Mail, Phone, Github, Linkedin, Code, ExternalLink, Download } from 'lucide-react';
 import { Button } from './ui/button';
 import { AnimatedSection } from './ui/animated-section';
+import { downloadResume } from '../lib/resume-utils';
 
 const Contact = () => {
   const contactInfo = [
@@ -84,7 +84,10 @@ const Contact = () => {
           </div>
 
           <AnimatedSection animation="scaleIn" delay={600}>
-            <Button className="portfolio-button-primary w-full group shadow-xl hover:shadow-2xl transition-all duration-500">
+            <Button 
+              className="portfolio-button-primary w-full group shadow-xl hover:shadow-2xl transition-all duration-500"
+              onClick={downloadResume}
+            >
               <Download className="mr-2 h-4 w-4 transition-transform group-hover:translate-y-1 duration-300" />
               Download Resume
             </Button>

@@ -1,8 +1,8 @@
-
 import { ArrowDown, Download, ExternalLink, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 import TextType from './ui/TextType';
 import { AnimatedSection } from './ui/animated-section';
+import { downloadResume } from '../lib/resume-utils';
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -100,13 +100,11 @@ const Hero = () => {
             
             <Button 
               variant="outline" 
-              className="portfolio-button-secondary group backdrop-blur-sm w-full sm:w-auto px-6 md:px-10 py-3 md:py-4 text-base md:text-lg" 
-              asChild
+              className="portfolio-button-secondary group backdrop-blur-sm w-full sm:w-auto px-6 md:px-10 py-3 md:py-4 text-base md:text-lg"
+              onClick={downloadResume}
             >
-              <a href="#contact">
-                <Download className="mr-2 h-4 w-4 md:h-5 md:w-5 transition-transform group-hover:translate-y-1" />
-                Download Resume
-              </a>
+              <Download className="mr-2 h-4 w-4 md:h-5 md:w-5 transition-transform group-hover:translate-y-1" />
+              Download Resume
             </Button>
           </div>
 
