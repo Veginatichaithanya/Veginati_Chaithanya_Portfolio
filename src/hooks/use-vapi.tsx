@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useCallback } from 'react';
 import Vapi from '@vapi-ai/web';
 
@@ -14,7 +13,7 @@ interface UseVapiOptions {
     voice?: {
       provider: '11labs';
       voiceId: string;
-      model: string;
+      model: 'eleven_multilingual_v2' | 'eleven_turbo_v2' | 'eleven_turbo_v2_5' | 'eleven_flash_v2' | 'eleven_flash_v2_5' | 'eleven_monolingual_v1';
       stability?: number;
       similarityBoost?: number;
       style?: number;
