@@ -14,6 +14,7 @@ interface UseVapiOptions {
     voice?: {
       provider: 'elevenlabs';
       voiceId: string;
+      model?: string;
     };
   };
 }
@@ -74,6 +75,7 @@ export const useVapi = (options: UseVapiOptions = {}) => {
         voice: {
           provider: 'elevenlabs',
           voiceId: '9BWtsMINqrJLrRacOk9x', // Aria voice
+          model: 'eleven_multilingual_v2',
         },
       });
     } catch (err) {
