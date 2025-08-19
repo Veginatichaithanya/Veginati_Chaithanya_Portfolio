@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, Sparkles } from 'lucide-react';
 import { Button } from './ui/button';
 import { AnimatedSection } from './ui/animated-section';
@@ -13,7 +12,7 @@ const Projects = () => {
       title: "IBM Complaint Management System",
       description: "AI-powered complaint management platform built with Supabase, React, and intelligent categorization algorithms. Features real-time dashboard, automated routing, and analytics.",
       tech: ["React", "Supabase", "AI/ML", "TypeScript", "Tailwind CSS"],
-      github: "https://github.com/Veginatichaithanya",
+      github: "https://github.com/Veginatichaithanya/Complaint-Management-System-naga",
       live: "https://complaintmanagement-system.netlify.app/",
       featured: true
     },
@@ -21,7 +20,7 @@ const Projects = () => {
       title: "EduSphere - MERN Learning Platform",
       description: "Comprehensive educational platform with AI-powered course recommendations, interactive learning modules, progress tracking, and integrated assessment tools.",
       tech: ["MongoDB", "Express.js", "React", "Node.js", "AI Integration"],
-      github: "https://github.com/Veginatichaithanya",
+      github: "https://github.com/Veginatichaithanya/EDUSPHERE",
       live: "https://edu-sphere-kare.netlify.app/",
       featured: true
     },
