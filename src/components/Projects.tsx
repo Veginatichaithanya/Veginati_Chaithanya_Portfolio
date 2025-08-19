@@ -13,24 +13,24 @@ const Projects = () => {
       title: "IBM Complaint Management System",
       description: "AI-powered complaint management platform built with Supabase, React, and intelligent categorization algorithms. Features real-time dashboard, automated routing, and analytics.",
       tech: ["React", "Supabase", "AI/ML", "TypeScript", "Tailwind CSS"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Veginatichaithanya",
+      live: "https://complaintmanagement-system.netlify.app/",
       featured: true
     },
     {
       title: "EduSphere - MERN Learning Platform",
       description: "Comprehensive educational platform with AI-powered course recommendations, interactive learning modules, progress tracking, and integrated assessment tools.",
       tech: ["MongoDB", "Express.js", "React", "Node.js", "AI Integration"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Veginatichaithanya",
+      live: "https://edu-sphere-kare.netlify.app/",
       featured: true
     },
     {
-      title: "Course Management Platform",
+      title: "Kiki's Learning Hub",
       description: "Full-stack platform with Razorpay integration for course enrollment, payment processing, user authentication, and content delivery management.",
       tech: ["React", "Python", "Razorpay", "MongoDB", "JWT"],
-      github: "#",
-      live: "#",
+      github: "https://github.com/Veginatichaithanya",
+      live: "https://kikislearninghub.in/",
       featured: false
     }
   ];
@@ -53,7 +53,7 @@ const Projects = () => {
           >
             <div className={`portfolio-card group relative h-full flex flex-col hover:scale-105 transition-all duration-500 ${project.featured ? 'ring-2 ring-primary/20 hover:ring-primary/40' : ''}`}>
               {project.featured && (
-                <div className="absolute -top-3 -right-3 bg-primary text-white p-2 rounded-full">
+                <div className="absolute -top-3 -right-3 bg-primary text-white p-2 rounded-full animate-pulse">
                   <Sparkles className="h-4 w-4" />
                 </div>
               )}
@@ -79,7 +79,7 @@ const Projects = () => {
                   asChild
                 >
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4 transition-transform group-hover:scale-110" />
+                    <Github className="mr-2 h-4 w-4 transition-transform group-hover:scale-110 duration-300" />
                     Code
                   </a>
                 </Button>
@@ -90,7 +90,7 @@ const Projects = () => {
                   asChild
                 >
                   <a href={project.live} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="mr-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <ExternalLink className="mr-2 h-4 w-4 transition-transform group-hover:translate-x-1 duration-300" />
                     Live Demo
                   </a>
                 </Button>

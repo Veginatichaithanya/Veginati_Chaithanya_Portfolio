@@ -113,26 +113,26 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-4 md:gap-6 mb-12 md:mb-16">
             <a 
-              href="mailto:chaithanyaveginati@gmail.com"
-              className="portfolio-card p-3 md:p-4 hover:bg-primary/10 transition-all duration-300 group hover:scale-110"
+              href="mailto:veginatichaithanya@gmail.com"
+              className="portfolio-card p-3 md:p-4 hover:bg-primary/10 transition-all duration-500 group hover:scale-110 hover:-translate-y-1"
             >
-              <Mail className="h-5 w-5 md:h-6 md:w-6 text-portfolio-text-secondary group-hover:text-primary transition-colors" />
+              <Mail className="h-5 w-5 md:h-6 md:w-6 text-portfolio-text-secondary group-hover:text-primary transition-all duration-300" />
             </a>
             <a 
-              href="https://github.com/chaithanyaveginati"
+              href="https://github.com/Veginatichaithanya"
               target="_blank"
               rel="noopener noreferrer"
-              className="portfolio-card p-3 md:p-4 hover:bg-primary/10 transition-all duration-300 group hover:scale-110"
+              className="portfolio-card p-3 md:p-4 hover:bg-primary/10 transition-all duration-500 group hover:scale-110 hover:-translate-y-1"
             >
-              <Github className="h-5 w-5 md:h-6 md:w-6 text-portfolio-text-secondary group-hover:text-primary transition-colors" />
+              <Github className="h-5 w-5 md:h-6 md:w-6 text-portfolio-text-secondary group-hover:text-primary transition-all duration-300" />
             </a>
             <a 
-              href="https://linkedin.com/in/chaithanyaveginati"
+              href="https://www.linkedin.com/in/chaithanyaveginati/"
               target="_blank"
               rel="noopener noreferrer"
-              className="portfolio-card p-3 md:p-4 hover:bg-primary/10 transition-all duration-300 group hover:scale-110"
+              className="portfolio-card p-3 md:p-4 hover:bg-primary/10 transition-all duration-500 group hover:scale-110 hover:-translate-y-1"
             >
-              <Linkedin className="h-5 w-5 md:h-6 md:w-6 text-portfolio-text-secondary group-hover:text-primary transition-colors" />
+              <Linkedin className="h-5 w-5 md:h-6 md:w-6 text-portfolio-text-secondary group-hover:text-primary transition-all duration-300" />
             </a>
           </div>
         </AnimatedSection>
@@ -140,9 +140,9 @@ const Hero = () => {
         <AnimatedSection animation="fadeInUp" delay={800}>
           <button 
             onClick={scrollToAbout} 
-            className="animate-bounce text-portfolio-text-secondary hover:text-primary transition-colors p-3 rounded-full hover:bg-primary/10 group"
+            className="animate-bounce text-portfolio-text-secondary hover:text-primary transition-all duration-300 p-3 rounded-full hover:bg-primary/10 group"
           >
-            <ArrowDown size={24} className="md:w-7 md:h-7 group-hover:translate-y-1 transition-transform" />
+            <ArrowDown size={24} className="md:w-7 md:h-7 group-hover:translate-y-1 transition-transform duration-300" />
           </button>
         </AnimatedSection>
       </div>
